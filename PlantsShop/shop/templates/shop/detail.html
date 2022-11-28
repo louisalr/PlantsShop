@@ -1,0 +1,25 @@
+{% extends 'shop/base.html' %}
+
+{% block title %} {{article.name}} {% endblock %}
+
+{% block content %}
+<h1> {{article.name}}</h1>
+<div class="rows">
+
+    <div class="row">
+        <div class="col-6">
+            <img src="{{product.picture}}" alt="{{product.name}}">
+            <h2> Replace with the picture </h2>
+        </div>
+
+        <div class="col-6">
+            <h2> {{product.name}}</h2>
+            <h3> {{product.price}}</h3>
+            <h5> Stock disponible : {{product.stock}}</h5>
+            <a href="" class="btn btn-info"> Add to cart </a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
