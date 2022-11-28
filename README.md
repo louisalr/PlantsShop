@@ -5,7 +5,21 @@ The goal of this project is to create a fully working website using Python and D
 ```bash
 source ./env/bin/active
 cd PlantsShop/
+
+#Effectuer les migrations 
+python manage.py
 python manage.py runserver
 ```
 
 
+
+Librairies utilisées
+
+```bash
+crispy : sert à afficher les formulaires avec Bootstrap
+pillow : sert à la gestion des images
+```
+
+
+
+Schéma base de données 
